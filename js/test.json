@@ -1,0 +1,28 @@
+
+ {
+    "array1": [
+      {"name":"css","count":5},
+      {"name":"javascript","count":16}
+    ],
+    "array2": ["HTML","CSS","JS","React","Node","Python"],
+    "array3":250,
+    "isMarried":true,
+    "student": {"firstName":"Asabeneh","lastName":"Yetayehe","age":250,"isMarried":true,"skills":["HTML","CSS","JS","React","Node","Python"]}
+ 
+    
+    ,
+        "firstName": "Asabeneh",
+        "lastName": "Yetayehe",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JS",
+            "React",
+            "Node",
+            "Python"
+        ]
+    
+    
+}
+
+  
