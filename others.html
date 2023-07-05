@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+        h1 {
+            background-color: yellow;
+        }
+     
+             body.mobile {
+                background-color: black;
+                color: white;
+            } /* works same with media*/
+        
+            #preview {
+                width: 600px;
+                height: 600px;
+                border: 1px solid black;
+            }
+        
+    </style>
+</head>
+<body>
+    
+    <a href="about.html">Hakkimda</a>
+    <a href="https://prototurk.com">prototurk.com</a>
+
+    <ul id="todos">
+        <li>
+            todo1
+            <button class="delete-btn">Sil</button>
+        </li>
+        <li>
+            todo2
+            <button class="delete-btn">Sil</button>
+        </li>
+        <li>
+            todo3
+            <button class="delete-btn">Sil</button>
+        </li>
+    </ul>
+
+
+    <div class="test-1">
+        test1
+        <div class="test-2">
+            test2
+            <div class="test-3">
+                test3
+            </div>
+        </div>
+    </div>
+
+    <h1>Header</h1>
+
+    <input type="text" placeholder="Name"> <br>
+    <textarea name="about" placeholder="About" cols="30" rows="10"></textarea>
+    <button data-type="bold" class="action-btn">Bold</button>
+    <button data-type="italic" class="action-btn">Undermark</button>
+    <button data-type="uppercase" class="action-btn">Upper case</button>
+
+    <hr>
+
+    <div id="preview"></div>
+
+    <hr>
+
+    <input class="test time" type="time" max="17:00" step="900"/> <br>
+    <input class="test date" type="date" max="2019-12-25" step="7"/> <br>
+    <input class="test" type="month" max="2019-12" step="12"/> <br>
+    <input type="file" class="file">
+    <input class="test" type="number" max="50" step="5"> <br>
+    <input class="test" type="range" value="1" max="10" min="-4">
+
+
+    <hr>
+
+    <button id="increment">Increment</button>
+    <button id="decrement">Decrement</button>
+    <button id="picker-btn">open</button>
+
+  
+
+
+
+    <script src="js/others.js"></script>
+</body>
+</html>
