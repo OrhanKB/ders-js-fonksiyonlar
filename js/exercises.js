@@ -1125,6 +1125,122 @@ image.addEventListener("error", e => {
 
 /************************************* EVENT LISTENERS ************************************/
 
+/**************************************** OTHERS ***************************/
+
+ const aTags = document.querySelectorAll("a")
+const tag = document.getElementById("web")
+
+/* 1) tag.addEventListener("click", e => {
+  if(!confirm("siteden ayrılıyorsunuz")) {
+    e.preventDefault()
+  }  
+}) */
+
+/* aTags.forEach(tag => {
+  tag.addEventListener("click", e => {
+    if(e.target.getAttribute("href").includes("http") && !confirm("siteden ayrılacaksınız")) { 
+        e.preventDefault()
+    }
+  })
+}) */
+
+
+/* 2 ) const test1 = document.querySelector(".test1")
+const test2 = document.querySelector(".test2")
+const test3 = document.querySelector(".test3")
+
+test1.addEventListener("click", e => {
+  console.log("test1 basıldı")
+})
+
+test2.addEventListener("click", e => {
+  e.stopPropagation()
+
+  console.log("test2 basıldı")
+})
+
+test3.addEventListener("click", e => {
+  e.stopPropagation()
+  console.log("test 3 basıldı")
+}) */
+
+
+/* 3) onst h1 = document.querySelector("h1")
+
+// h1.style.setProperty("color", "red") // first way
+
+// document.styleSheets[0].cssRules[0].style.setProperty("color", "blue") // second way */
+
+ /* 4) const mq = window.matchMedia("(max-width: 500px)")
+console.log(mq.matches)
+console.log(mq.media) 
+
+mq.addEventListener("change", e => {
+  console.log(e.matches)
+}) */
+
+/* const textArea = document.getElementById("test-textarea")
+
+textArea.addEventListener("select", e => {
+  e.target.value.substring(
+    console.log(
+      textArea.value.substring(
+        textArea.selectionStart,
+        textArea.selectionEnd
+      )
+    )
+  )
+}) */
+
+/* 5) const textArea = document.getElementById("test-textarea")
+const buttons = document.querySelectorAll(".button")
+const preview = document.getElementById("preview")
+const selection =  {}
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", e => {
+    let selected = textArea.value.substring(
+      textArea.selectionStart,
+      textArea.selectionEnd
+    )
+    switch(e.target.dataset.type) {
+      case "bold":
+        selected = `<b>${selected}</b>`
+        break
+        case "italic":
+          selected = `<i>${selected}</i>`
+          break
+    }
+    textArea.setRangeText(
+      selected,
+      textArea.selectionStart,
+      textArea.selectionEnd,
+      "select"
+    )
+    textArea.focus()
+    preview.innerHTML = textArea.value
+  })
+}) */
+
+const input = document.querySelectorAll("input")
+const incrementBtn = document.getElementById("increment-button")
+const decrementBtn = document.getElementById("decrement-button")
+
+incrementBtn.addEventListener("click", e => {
+  input.forEach(input => {
+    input.stepUp()
+  })
+})
+
+decrementBtn.addEventListener("click", e => {
+  input.forEach(input => {
+    input.stepDown()
+  })
+})
+
+/**************************************** OTHERS ***************************/
+
+
 
 
 

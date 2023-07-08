@@ -2,6 +2,20 @@
 <html lang="en">
   <head>
     <title>JavaScript for Everyone:DOM</title>
+    <style>
+     /*  h1 {
+        color: red;
+      } */
+      /* #preview {
+        width: 600px;
+        height: 600px;
+        border: 1px solid black;
+      } */
+
+      .active {
+        background-color: yellow;
+      }
+    </style>
     
   </head>
   <body>
@@ -16,10 +30,44 @@
 
   </div> -->
 
+  <form action="about.html" id="form1" novalidate>
+    <input type="text" name="username" minlength="3" placeholder="username" required> <br>
+    <input pattern="[0-9]" type="password" name="password" id="password" minlength="6" placeholder="password" required> <br>
+    <input type="email" name="email" id="email" placeholder="email" required> <br>
+    <textarea name="about" cols="30" rows="10" placeholder="About" required></textarea> <br>
+    <button type="submit">Submit</button>
+    <button id="submit-btn" type="button">Reset</button>
+
+  </form>
+
+  <hr>
+
+  <button id="test">test button</button>
+
+  <hr>
+
+  <div class="tab">
+    <nav>
+      <button>tab1</button>
+      <button>tab2</button>
+      <button>tab3</button>
+    </nav>
+    <div class="contents">
+      <section>content1</section>
+      <section>content2</section>
+      <section>content3</section>
+    </div>
+  </div>
+
+
+ 
 
 
 
-    <script src="js/element.js"></script> 
+
+
+
+    <script src="js/others2.js"></script> 
 
   
   </body>
